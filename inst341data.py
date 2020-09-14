@@ -16,10 +16,10 @@ def get_data(rel_url):
     if url.endswith('.zip'):
         z = zipfile.ZipFile(local_file)
         z.extractall()
-        for info in z.infolist():
-            print("downloaded {}".format(info.filename))
+        info = z.infolist().pop(0)
+        print("Downloaded {}".format(os.path.split(info.filename)[0]))
     else:
-        print("downloaded {}".format(local_filename))
+        print("Downloaded {}".format(local_filename))
 
 def get_module_2(username):
     get_data("modules/module-{0:02n}/data/{1:s}.zip".format(2, username))
