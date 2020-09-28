@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = 'inst341data',
-    version = '0.0.4',
+    version = '0.0.5',
     author = 'Ed Summers',
     author_email = 'ehs@pobox.com',
     url = 'https://github.com/edsu/inst341data',
