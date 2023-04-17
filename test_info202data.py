@@ -1,12 +1,12 @@
 import os
 import shutil
-import inst341data
+import info202data
 
 def test_get_data():
-    inst341data.get_module_2("inst341")
-    assert os.path.isdir("inst341")
-    shutil.rmtree("inst341")
-    os.remove("inst341.zip")
+    info202data.get_module_2("info202")
+    assert os.path.isdir("info202")
+    shutil.rmtree("info202")
+    os.remove("info202.zip")
 
 def test_missing():
-    inst341data.get_module_2("foo")
+    info202data.get_module_2("foo")
