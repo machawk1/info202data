@@ -2,7 +2,7 @@ import os
 import zipfile
 import urllib.request 
 
-base_url = "https://github.com/edsu/inst341/raw/master/"
+base_url = "https://github.com/machawk1/info202/raw/master/"
 
 def get_data(rel_url):
     url = base_url + rel_url
